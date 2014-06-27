@@ -371,15 +371,13 @@
 	<section id="contact" name="contact"></section>
 	<div id="footerwrap">
 		<div class="container">
-			<!--<div class="col-lg-5">
-				<h3>Address</h3>
+			<div class="col-lg-5">
+				<h3>Contactos</h3>
 				<p>
-				Av. Greenville 987,<br/>
-				New York,<br/>
-				90873<br/>
-				United States
+				Facebook: <a href="https://www.facebook.com/infosocialconsulting">infosocialconsulting</a><br/>
+				Twitter: <a href="https://twitter.com/infosocialc">@infosocialc</a><br/>
 				</p>
-			</div>-->
+			</div>
 			
 			<div class="col-lg-7">
 				<h3>¡Solicita presupuesto sin compromiso!</h3>
