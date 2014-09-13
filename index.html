@@ -25,6 +25,7 @@
     <script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/Chart.js"></script>
 	<script src="assets/js/modernizr.custom.js"></script>
+	<script src="assets/js/selectnav.min.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,6 +35,14 @@
 	  ga('create', 'UA-52629420-1', 'auto');
 	  ga('send', 'pageview');
 
+	</script>
+	<script>
+		domready(function(){
+			selectnav('gn-menu', {
+				label: '--- Navigation --- '
+			});
+			prettyPrint()
+		})
 	</script>
 
 	<!-- Favicon -->
@@ -68,13 +77,13 @@
 	<section id="home" name="home"></section>
 	<div id="headerwrap">
 		<div class="container">
-			<div class="col-lg-2"></div>
-			<div class="col-lg-8">
-				<img src="assets/img/LogoInfoSocial.png">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				<img class="top_logo" src="assets/img/LogoInfoSocial.png">
 				<h1>InfoSocial Consulting</h1>
 				<h4>* Vivir es Interactuar :) *</h4>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 			</div>
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
@@ -85,24 +94,26 @@
 	<div class="container services">
 			<h3>Nuestros Servicios</h3>
 			<hr>
-			<iframe width="560" height="315" src="//www.youtube.com/embed/PEY8esNapzU" frameborder="0" allowfullscreen></iframe>
+			<div class="yvideo">
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/PEY8esNapzU" frameborder="0" allowfullscreen></iframe>
+			</div>
 			<br>
 			<br>
-		<div class="col-lg-3 service-line">
+		<div class="col-lg-3 col-md-3 col-sm-6 service-line">
 			<img src="assets/img/services/s01.png">
 			<h4>Community Management</h4>
 			<br>
 			<p>Nuestro objetivo es hacerte la vida mas fácil, El Community Manager mantiene una comunicación directa y constante con su equipo para hacerles llegar todas las cuestiones y oportunidades de los clientes.</p>
 		</div><!-- /col-lg-3 -->
 
-		<div class="col-lg-3 service-line">
+		<div class="col-lg-3 col-md-3 col-sm-6 service-line">
 			<img src="assets/img/services/s04.png">
 			<h4>Diseño Gráfico</h4>
 			<br>
 			<p>El contenido en los diversos formatos digitales, webs y plataformas sociales es fundamental para poder comunicar con efectividad; y sin embargo no siempre el cliente dispone de tiempo para dedicarlo a elaborar contenido informativo en ellas.</p>
 		</div><!-- /col-lg-3 -->
 
-		<div class="col-lg-3 service-line">
+		<div class="col-lg-3 col-md-3 col-sm-6 service-line">
 			<img src="assets/img/services/s03.png">
 			<h4>Desarrollo de Aplicaciones</h4>
 			<br>
@@ -110,7 +121,7 @@
 				Esta puede ser vista y usada por muchas personas.</p>
 		</div><!-- /col-lg-3 -->
 	
-    <div class="col-lg-3 service-line">
+    <div class="col-lg-3 col-md-3 col-sm-6 service-line">
 			<img src="assets/img/services/s02.png">
 			<h4>Consultoría de Medios Sociales</h4>
 			<br>
@@ -128,11 +139,11 @@
 			<h4>"NUESTRO TRABAJO ES CONSTRUIR LA PLATAFORMA. NUESTRA PASION ES CONTAR LA HISTORIA DETRÁS."</h4>
 			<br>
 			<br>
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-6 col-sm-6">
 				<p>Los empleados y los consumidores. Dos mitades de la totalidad de una marca, la totalidad de la audiencia de una marca. A veces, estas dos mitades tienen diferentes puntos de vista, creando un punto débil en la historia de la marca, la debilidad empaña la credibilidad. Las marcas que no son creíbles, no son viables.</p>
 				<p>Nosotros aplastamos la debilidad mediante el diseño de toda la historia de la marca en las redes sociales. Un lugar común en poder del (os) Dueño (os), los empleados y los consumidores para crear una experiencia que se conecta desde el interior hacia fuera.</p>
 			</div><!-- col-lg-6 -->
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-6 col-sm-6">
 				<p>Siendo fieles a la marca que representamos, elevamos la relación de la audiencia a la misma. Al igual que se convierte en amor se convierte en una pasión, La pasión se convierte en la promoción Y vemos florecer de la marca desde dentro, creando una historia completa junto a la audiencia.</p>
 				<!-- <p><img src="assets/img/signature.png" class="pull-right"></p> -->
 			</div><!-- col-lg-6 -->
@@ -147,7 +158,7 @@
 			<div class="row">	
 			
 				<!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-4 ">
+				<div class="col-md-4 col-sm-4">
 			    	<div class="grid mask">
 						<figure>
 							<img class="img-responsive" src="assets/img/portfolio/eldominico.jpg" alt="">
@@ -186,7 +197,7 @@
 				
 				
 				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 			    	<div class="grid mask">
 						<figure>
 							<img class="img-responsive" src="assets/img/portfolio/popexpress.jpg" alt="">
@@ -220,7 +231,7 @@
 						  </div><!-- /.modal -->
 				
 				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 			    	<div class="grid mask">
 						<figure>
 							<img class="img-responsive" src="assets/img/portfolio/3men2tours.jpg" alt="">
@@ -267,28 +278,28 @@
 			<hr>
 			<br>
 			<br>
-		<div class="col-lg-3 service-line">
+		<div class="col-lg-3 col-md-6 col-sm-6 service-line">
 			<p><center><a href= "http://goo.gl/P5DjT6"><img src="assets/img/logros/premio_MECyT.png"></a></center></p>
 			<h4>Primer Lugar de la 5ta. Competencia Nacional de Planes de Negocios 2013</h4>
 			<br>
 			<p>La Competencia Nacional de Planes de Negocios tiene como objetivo general estimular el emprendimiento e incrementar la cantidad de nuevas empresas de alto valor económico y social en República Dominicana. Tiene el propósito de fomentar la cultura emprendedora en los jóvenes.</p>
 		</div><!-- /col-lg-3 -->
 
-		<div class="col-lg-3 service-line">
+		<div class="col-lg-3 col-md-6 col-sm-6 service-line">
 			<p><center><a href="http://goo.gl/sDlhQq"><img src="assets/img/logros/certificado.png"></a></center><p>
 			<h4>Certificado de Planificación Empresarial</h4>
 			<br>
 			<p>El sistema Enloop Performance Score (EPS) es un algoritmo interactivo en tiempo real que predice el riesgo de fracaso y la probabilidad de éxito para el negocio en una escala de 1-1.000, con un número más alto indica una mayor probabilidad de éxito. La puntuación se deriva de muchas variables cuantitativas y datos que son indicadores importantes de las fortalezas y debilidades de cualquier negocio.</p>
 		</div><!-- /col-lg-3 -->
 
-		 <div class="col-lg-3 service-line">
+		 <div class="col-lg-3 col-md-6 col-sm-6 service-line">
 			<p><center><a href= "https://learn.hootsuite.com/u/cuesto"><img alt="Hootsuite Certified Professional" title="Hootsuite Certified Professional (learn.hootsuite.com)" src="https://learn.hootsuite.com/cert.php?id=19204&code=a55a381880003f9b166c5e31d1df04c7" width="218" height="220" /></a></center></p>
 			<h4>Certificado Profesional Hootsuite</h4>
 			<br>
 			<p>En la rápida evolución del panorama de los medios en el día de hoy, los medios sociales no sólo se han convertido en una herramienta fundamental para la comunicación, sino en una habilidad imprescindible, en una multitud de industrias. Por esa razón todos los miembros de nuestro equipo están certificados.</p>
 		</div><!-- /col-lg-3 -->
 
-		<div class="col-lg-3 service-line">
+		<div class="col-lg-3 col-md-6 col-sm-6 service-line">
 			<p><center><a href="https://hootsuite.com/p_11026?d=pro" target="_blank"><img src="http://socialbusiness.hootsuite.com/rs/hootsuitemediainc/images/solution-partner-badge.png" alt="Hootsuite Solution Partner"></a></center></p>
 			<h4>Hootsuite Solution Partner</h4>
 			<br>
@@ -306,7 +317,7 @@
 		<hr>
 		<br>
 		<br>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3 col-sm-6">
                 <!-- START PRICING TABLE -->
                 <div class="pricing-option">
                     <div class="pricing-top">
@@ -328,7 +339,7 @@
                 <!-- END PRICING TABLE -->
 			</div><!-- /col -->
 			
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3 col-sm-6">
                 <!-- START PRICING TABLE -->
                 <div class="pricing-option">
                     <div class="pricing-top">
@@ -353,7 +364,7 @@
                 <!-- END PRICING TABLE -->
 			</div><!-- /col -->
 			
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3 col-sm-6">
                 <!-- START PRICING TABLE -->
                 <div class="pricing-option">
                     <div class="pricing-top">
@@ -378,7 +389,7 @@
                 <!-- END PRICING TABLE -->
 			</div><!-- /col -->
 			
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3 col-sm-6">
                 <!-- START PRICING TABLE -->
                 <div class="pricing-option">
                     <div class="pricing-top">
@@ -411,7 +422,7 @@
 	<section id="contact" name="contact"></section>
 	<div id="footerwrap">
 		<div class="container">
-			<div class="col-lg-5">
+			<div class="col-lg-5 col-md-5 col-sm-5">
 				<h3>Contactos</h3>
 				<p>
 				Teléfono: 809.601.9002</br>
@@ -422,7 +433,7 @@
 				</p>
 			</div>
 			
-			<div class="col-lg-7">
+			<div class="col-lg-7 col-md-7 col-sm-7">
 				<h3>¡Solicita presupuesto sin compromiso!</h3>
 				<br>
 				<form role="form" action="contact.php" method="post" enctype="plain"> 
@@ -456,6 +467,7 @@
 	<script src="assets/js/classie.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
 	<script src="assets/js/gnmenu.js"></script>
+	<script src="assets/js/jquery.fitvids.js"></script>
 	<script>
 		new gnMenu( document.getElementById( 'gn-menu' ) );
 	</script>  
@@ -463,6 +475,12 @@
 		$('.carousel').carousel({
 		  interval: 5500
 		  })
+	</script>
+	<script>
+	  $(document).ready(function(){
+		// Target your .container, .wrapper, .post, etc.
+		$(".yvideo").fitVids();
+	  });
 	</script>
 	
 	
