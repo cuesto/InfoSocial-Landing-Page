@@ -57,21 +57,31 @@
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-<center>
+
   <body data-spy="scroll" data-offset="0" data-target="#gn-menu">
   	<!-- ========== MAIN MENU ========== -->
-	
 	<div class="container">
 		<ul id="gn-menu" class="gn-menu-main">
-			<li><a href="#home" class="gn-icon gn-icon-home smoothScroll"></a></li>
-			<li><a href="#services" class="gn-icon gn-icon-archive smoothScroll">Servicios</a></li>
-			<li><a href="#portfolio" class="gn-icon gn-icon-article smoothScroll">Portafolio</a></li>
-			<li><a href="#blog" class="gn-icon gn-icon-lab smoothScroll">Logros</a></li>
-			<li><a href="#prices" class="gn-icon gn-icon-bars smoothScroll">Planes</a></li>
-			<li><a href="#contact" class="gn-icon gn-icon-envelop smoothScroll">Contacto</a></li>
+			<li class="gn-trigger">
+				<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+				<nav class="gn-menu-wrapper">
+					<div class="gn-scroller">
+						<ul class="gn-menu">
+							<li><a href="#home" class="gn-icon gn-icon-home smoothScroll"></a></li>
+							<li><a href="#services" class="gn-icon gn-icon-archive smoothScroll">Servicios</a></li>
+							<li><a href="#portfolio" class="gn-icon gn-icon-article smoothScroll">Portafolio</a></li>
+							<li><a href="#blog" class="gn-icon gn-icon-lab smoothScroll">Logros</a></li>
+							<li><a href="#prices" class="gn-icon gn-icon-bars smoothScroll">Planes</a></li>
+							<li><a href="#contact" class="gn-icon gn-icon-envelop smoothScroll">Contacto</a></li>
+						</ul>
+					</div><!-- /gn-scroller -->
+				</nav>
+			</li>
+			<li><a href="#home" class="smoothScroll">Flat & Scroll 2</a></li>
 		</ul>
 	</div><!-- /container -->
-	</center>
+	
+	
 	
 	<!-- ========== HEADER SECTION ========== -->
 	<section id="home" name="home"></section>

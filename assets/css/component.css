@@ -76,7 +76,7 @@
 }
 
 .gn-menu-main > li:last-child {
-		float: left;
+		float: right;
 		border-right: none;
 		border-left: 1px solid #555555;
 }
@@ -97,8 +97,8 @@
 .gn-menu-wrapper {
 		position: fixed;
 		top: 60px;
-		bottom: 0px;
-		left: 0px;
+		bottom: 0;
+		left: 0;
 		overflow: hidden;
 		width: 60px;
 		border-top: 1px solid #555555;
